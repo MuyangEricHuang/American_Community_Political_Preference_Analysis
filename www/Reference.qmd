@@ -1,0 +1,14 @@
+---
+title: "Reference"
+format: html
+editor: visual
+self-contained: true
+---
+
+## Result of K-means (k = 2)
+
+![](k-means%20results.png)
+
+## 2024 U.S. Elections Presidential Results
+
+![](2024%20US%20election%20results.png){width="1330"}

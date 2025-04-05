@@ -1,0 +1,119 @@
+---
+title: "Dictionary of Variables"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    fig_height: 4.5
+    fig_width: 8
+  pdf_document:
+    fig_height: 3.5
+    fig_width: 3.5
+  word_document:
+    toc: no
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r,echo=FALSE}
+knitr::opts_chunk$set(error=FALSE, message=FALSE, warning=FALSE,
+                      echo=T, tidy.opts=list(width.cutoff=60),tidy=TRUE)
+```
+
+# Data Contribution Process and Logic
+
+**5-year ACS data of 2022**
+
+**Geographic Study Region**: National-level and all the states and counties/cities, except Connecticut (where statistics for counties are not available).
+
+**Geographic Unit**:
+
+-   For the national-level study, we summarize the data at the state-level
+
+-   For the state-level study, we summarize the data at the county-level
+
+
+# Demographic Structure
+
+## Varaiable 1: Proportion of Voting-Age Population
+**Table From**: B01001: Sex by Age
+
+### Description
+The proportion of the voting-age population not only directly influences voter participation rates but also reflects the age distribution within a region. Generally, younger voters are less likely to align with traditional conservative policies and are more inclined to support Democrats, while older voters tend to favor Republicans. 
+
+## Varaiable 2: Proportion of Married-Couple Family
+**Table From**: B11001: Household Type (Including Living Alone)
+
+### Description
+This variable represents the family structures within a region and reflects certain traditional values of the society, influencing party preferences of voters. Historically, Republicans gained more support from the areas with higher proportion of married-couple family, especially in rural areas. This traditional family structure tends to closely align with Republican values. 
+
+## Varaiable 3: Proportion of Households Not Classified as Traditional Relationships
+**Table From**: B09019: Household Type (Including Living Alone) by Relationship
+
+### Description
+This household type appear more frequently in urban or suburban areas and typically aligns closely with inclusive and progressive policies of Democrats. Republicans, on the other hand, are often struggled to gain support from these households, partially due to the religious differences.
+
+## Varaiable 4: Proportion of Population Married More than Three or More Times
+**Table From**: B12505: Number of Times Married by Sex by Marital Status for the Population 15 Years and Over
+
+### Description
+Individuals who have been married multiple times are more likely to support traditional views and religious faiths on marriages, aligning with Republican values. Rural areas in the South and Midwest tend to have a higher proportion of population married multiple times, and thus we can observe political differences geographically based on this variable.
+
+
+# Ethnicity and Culture
+
+## Varaiable 5: Proportion of Non-White Population
+**Table From**: B02001: Race
+
+### Description
+Race and ethnicity, while heavily influencing the culture of a community, play a significant role in analyzing political preferences. A community with a high proportion of non-white population is more likely to support Democrats, due to its emphasis on civil rights, social justice, and perhaps immigration policies. 
+
+## Varaiable 6: Proportion of Current Residence (over 1 yr) Who Moved from Abroad as Non U.S. Citizen
+**Table From**: B07007: Geographical Mobility in the Past Year by Citizenship Status for Current Residence in the United States
+
+### Description
+Many current residents who were not U.S. citizens when they moved from abroad may not yet be voters, but they are the potential voters and can reflect the political preferences of their communities in which they reside, particularly in urban areas. Historically, this population has favored Democrats due to its emphasis on inclusiveness and immigration reform. 
+
+## Varaiable 7: Proportion of Occupied Housing Units That are Owner-Occupied
+**Table From**: B25003: Tenure  
+
+### Description
+Studies show that individuals who own housing units tend to prioritize policies such as lower taxes and property rights, which aligns with support for Republicans. In urban areas, homeownership rates are lower and people tend to rent for living, so residents in these areas typically favor Democratic policies that focus on affordable housing, highlighting a geographic political difference.
+
+
+# Socioeconomy
+
+## Varaiable 8: Median Household Income Level
+**Table From**: B19013: Median Household Income in the Past 12 Months (in 2022 Inflation-Adjusted Dollars)
+
+### Description
+Income levels vary significantly in urban, suburban, and rural areas, and we use median household income as the representative measure. Historically, lower-income households tend to support Democrats that advocating for big government, social equity, and public services, while higher-income households tend to support Republicans that advocating for small government, deregulation, and tax cuts.
+
+## Varaiable 9: Proportion of Employed Civilians with Blue-Collar Occupations
+**Table From**: C24010: Sex by Occupation for the Civilian Employed Population 16 Years and Over
+
+### Description
+In this variable, blue-collar occupations stand for natural resources, construction, maintenance, production, transportation, and material moving occupations. These blue-collar workers tend to align with Republican values emphasizing on as tax cuts, job creation, and deregulation, although Democrats have historically been a party of labor unions. 
+
+## Varaiable 10: Proportion of Voting-Age Population with a Bachelor's Degree or Higher
+**Table From**: B29002: Citizen, Voting-Age Population by Educational Attainment
+
+### Description
+Political preferences have been found to be closely associated with education levels. College students tend to focus on broader issues such as climate change mitigation, diversity, and civil rights. Geographically, people in urban areas have higher level of educational attainment on average, and individuals with higher education tend to support Democrats due to the party's emphasis on broader issues.
+
+
+# Health and Fertility
+
+## Varaiable 11: Proportion of Unmarried Women Under 20 Who Gave Birth in the Past 12 Months
+**Table From**: B13002: Women 15 to 50 Years Who Had a Birth in the Past 12 Months by Marital Status and Age
+
+### Description
+The variable is designed to represent the culture of a community, specifically the extent of its open-mindedness. It also reflects the economic disadvantage of a community and its access to healthcare. Democrats is known for advocating for emphasize social welfare, affordable healthcare, and sex education to support young mothers. This variable can potentially identify communities that are more likely to support Democrats.
+
+## Varaiable 12: Proportion of Non-Institutionalized Civilian with Health Insurance
+**Table From**: B27001: Health Insurance Coverage Status by Sex by Age
+
+### Description
+High health insurance coverage rates suggest progressive values within communities. These communities prioritize social welfare and equity, aligning with Democratic policies, particularly in urban areas. Communities with low health insurance coverage rates, often found in rural areas, tend to prefer less government intervention. Residents in these areas may prioritize reducing healthcare costs rather than expanding health insurance coverage, aligning with Republican policies.

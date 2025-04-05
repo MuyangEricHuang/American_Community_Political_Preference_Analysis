@@ -1,0 +1,79 @@
+---
+title: "American Community Survey Analysis"
+author: "Muyang Huang, Mengyang Sheng, Mian Jiang"
+format: html
+editor: visual
+self-contained: true
+---
+# Dataset
+
+R code to construct the dataset: **DownloadData.R**
+
+Data Selection: **1-year ACS data of 2022**
+
+**Geographic Study Region**: National-level and all the states and counties/cities
+
+**Geographic Unit**:
+
+-   For the national-level study, we summarize the data at either the state-level
+
+-   For the state-level study, we summarize the data at the county-level
+
+# Links
+
+[Link to our Shiny App.](https://juvenilemartian.shinyapps.io/final-project-group8/)
+
+[Link to our GitHub repository.](https://github.com/Data-Science-I/final-project-group8)
+
+
+# Contributions (Alphabetic order):
+
+All of the team members contributed actively and well during the entire project.
+
+**Construct the data set**: Muyang Huang, Mian Jiang, Mengyang Sheng
+
+**R code used to create the data set**: Muyang Huang, Mian Jiang, Mengyang Sheng
+
+**Classify the data set to subgroup**: Muyang Huang, Mengyang Sheng
+
+**Document the construction of the data set in an R file**: Muyang Huang, Mian Jiang, Mengyang Sheng
+
+**Quality check of the final data set**: Mengyang Sheng
+
+**Summarize the data construction process**: Mengyang Sheng
+
+**Create the Shiny app, tab panels and drop down menu**: Mian Jiang
+
+**Interactive histogram using plotly**: Muyang Huang, Mian Jiang
+
+**Table summarizing the min, Q1, median, Q3, max, mean, sd, and \# of missing**: Mian Jiang
+
+**The map visualizing the spatial distribution of each variable**: Mian Jiang
+
+**Clearly and sufficiently summarize the data construction process**: Mian Jiang, Mengyang Sheng
+
+**Visually summarize the clustering results and the elbow plot for k clusters**: Mian Jiang
+
+**Discuss the number of clusters to pick**: Muyang Huang
+
+**Summarize the clustering results on maps**: Mian Jiang
+
+**Use text on the app to interpret the results and summarize the conclusion**: Muyang Huang
+
+**.qmd file with associated .html file**: Muyang Huang, Mengyang Sheng
+
+**Code debugging**: Muyang Huang, Mian Jiang, Mengyang Sheng
+
+**Code organization**: Muyang Huang
+
+**Code commenting**: Muyang Huang
+
+**User Interface**: Muyang Huang, Mian Jiang, Mengyang Sheng
+
+**Refine the table and the figures output**: Muyang Huang, Mengyang Sheng
+
+**Describe the data contribution process and introduce the final data set and variables**: Mengyang Sheng
+
+**Describe the “Variables” tab – explain all the tables and figures from the app and show the shiny interactivity with these plots**: Mian Jiang
+
+**Describe the “Unsupervised Learning” tab – interpret all the tables and figures from the app, show the shiny interactivity with these plots, and summarize the results and conclusion**: Muyang Huang
